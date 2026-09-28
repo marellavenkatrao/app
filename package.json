@@ -1,0 +1,15 @@
+{
+  "name": "nec-portal",
+  "version": "1.0.0",
+  "description": "Narasaropeta Engineering College - Seminar Hall & AO Hospitality Portal",
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,blue\" \"npm start --prefix server\" \"npm run dev --prefix client\"",
+    "start": "concurrently -n \"SERVER,CLIENT\" -c \"magenta,blue\" \"npm start --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm start --prefix server",
+    "client": "npm run dev --prefix client",
+    "seed": "npm run seed --prefix server"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
